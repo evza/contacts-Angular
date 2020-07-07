@@ -1,0 +1,21 @@
+<table id="table1" *ngIf="organizerService.contacts.length; else noContacts">
+    <tr>
+        <th>№</th>
+        <th>Имя</th>
+        <th>Номер</th>
+        <th>Статус</th>
+        <th>Удалить</th>
+    </tr>
+    <tr *ngFor ="let contact of organizerService.contacts; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td [class.vip]="contact.completed" [class.vip1]="contact.completed">{{ contact.title }}</td>
+        <td [class.vip]="contact.completed">{{ contact.phone }}</td>
+        <td><input type="checkbox" [checked]="contact.completed" (change)="onChange(contact.id)"></td>
+        <td><button (click)="delContact(contact.id)">&times;</button></td>
+    </tr>
+</table>
+
+<ng-template #noContacts>
+    <h4>Not any contacts now</h4>
+</ng-template>
+

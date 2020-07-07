@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    background-color: #fffaf4;
+    padding: 20px 35px;
+    font-size: 1.3em;
+    color: darkolivegreen;
+}
+
+tr {
+    text-align: center;
+}
+
+th {
+    padding: 10px 12px 15px;
+    font-size: 1.5em;
+}
+
+.vip {
+    text-decoration: dotted;
+    color: #ffbd8f;
+}
+
+.vip1 {
+    display: block;
+    position: relative;
+}
+.vip1::after {
+    content: 'VIP';
+    display: block;
+    position: absolute;
+    top: calc(50% - 6px);
+    right: 0;
+    width: 10px;
+    height: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}

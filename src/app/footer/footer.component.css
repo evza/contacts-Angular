@@ -1,0 +1,13 @@
+h6 {
+    display: block;
+    font-weight: 700;
+    font-size: 1em;
+    color: darkolivegreen;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding: 17px 0;
+    width: 100%;
+    background-color: #b8ffe7;
+    border: 1px solid silver;
+}
